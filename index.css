@@ -1,0 +1,61 @@
+.whole {
+  display: grid;
+  grid-template-columns: .6fr 4fr;
+  grid-template-areas: "navbar mainContent";
+  grip-gap: 20px;
+}
+
+header {
+  font-size: 25px;
+  font-family: impact;
+}
+
+.letter {
+  font-size: 60px
+}
+
+#navbar {
+  grid-area: navbar;
+  margin: 20px;
+  position: fixed;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 600px) {
+  div.whole {
+    grid-template-area: 1fr;
+    grid-template-area: "navbar" "mainContent"
+  }
+  
+  nav#navbar {
+    position: inherit;
+  }
+}
+
+.nav-list {
+  color: black;
+  font-family: impact;
+  display: fixed;
+  list-style: none;
+  border: 1px double black;
+  margin-left: -40px;
+  padding: 5px;
+}
+
+#main-doc {
+  grid-area: mainContent;
+  margin: 20px;
+}
+
+code {
+  display: block;
+}
+
+.cyborg {
+  height: 150px;
+  width: 400px;
+}
+
